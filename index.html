@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title>My Family Book</title>
+    </head>
+    <body style="text-align: center;">
+        <script> 
+
+            var names=[
+                "2.My Father(Abdul Sattar)",
+                "3.My Mother(Shahnaz Bano)",
+                "4.My Brother(Mohammed Sohel)",
+                "Me(Mohammed Shaadab",
+                "5.My brother(Abdul Samad"
+                 
+            ];
+    
+            var images=[
+                "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/9f9784a1-dcaa-44bd-b17b-12f3185da944/d27tb6g-6fe2cb92-94ab-49be-8617-32a4e8b1fd10.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzlmOTc4NGExLWRjYWEtNDRiZC1iMTdiLTEyZjMxODVkYTk0NFwvZDI3dGI2Zy02ZmUyY2I5Mi05NGFiLTQ5YmUtODYxNy0zMmE0ZThiMWZkMTAucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.c3Gr-pEUrgZvALN2g5St5XCXiDQyyJkm6LM1UtmMnjE",
+                "https://t4.ftcdn.net/jpg/02/84/66/33/360_F_284663321_jg59T2ccVwovZsEsLeGQ5W6T7MIongqN.jpg",
+                "https://st4.depositphotos.com/23109214/27157/v/950/depositphotos_271572890-stock-illustration-cartoon-brothers-character-laughing-older.jpg";
+                "https://img.freepik.com/free-vector/cute-boy-standing-position-showing-thumb_96037-450.jpg?size=626&ext=jpg";
+                "https://i.pinimg.com/736x/77/d4/15/77d41520a3f07995b184797a3734bf44.jpg"
+        ];
+            var i=0;
+            function update(){
+                document.getElementById("one").innerHTML=names[i];
+                document.getElementById("family_image").innerHTML=images[i];
+                i++;
+                if (i==5) {
+                    i=0
+                } }
+            
+            </script>
+        <h1>My Family Book</h1>
+        <hr> <hr>
+        <img src="https://images-na.ssl-images-amazon.com/images/I/51KNpAKei-L.jpg" style="width: 30%;" id="family_memeber_image">
+        <h3 id="one">1. Our Family Book</h3> 
+        <button type="button" onclick="update()">Next</button>
+        <hr>
+
+        
+    </body>
+</html>
